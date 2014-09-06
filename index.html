@@ -12,14 +12,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foundation</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
-    <link rel="stylesheet" href="fonts.css" type="text/css" charset="utf-8" /> 
+    <link rel="stylesheet" href="fonts.css" type="text/css" charset="utf-8" />
+   
     <script src="bower_components/modernizr/modernizr.js"></script>
- 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 
   <title>SLIDER REVOLUTION -  The Responsive Slider Plugin</title>
 
   <!-- get jQuery from the google apis -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
     <!-- CSS STYLE-->
     <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
 
@@ -28,19 +32,17 @@
     <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 
     <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
-      <link rel="stylesheet" type="text/css" href="css/extralayers.css" media="screen" /> 
-  <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
-
-
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
 
  
+
+
 <link rel="stylesheet" href="css/nivo-lightbox.css" type="text/css" />
 <link rel="stylesheet" href="themes/default/default.css" type="text/css" />
 
-<script src="nivo-lightbox.min.js" href="js/nivo-lightbox.min.js"></script>
+<script src="nivo-lightbox.min.js"></script>
 
-</script>
+</script><script type="text/javascript" src="fancybox/jquery.fancybox.js?v=2.0.6"></script>
 
 
 
@@ -75,26 +77,32 @@
     <div id="slider1" class="tp-banner tp-resizeme" >
       <ul>
         <!-- SLIDE  -->
-        <li data-transition="fade" data-slotamount="7" data-masterspeed="300"  data-delay="99999999">
+        <li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-delay="99999999">
           <!-- MAIN IMAGE -->
           <img src="images/background2.png"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
           <!-- LAYERS -->
           <!-- LAYER NR. 1 -->
-        <div class="tp-caption pat tp-resizeme"
+        <div class="tp-caption tp-resizeme"
             data-x="40"
             data-y="20"
             data-speed="300"
             data-start="300"
-            data-easing="easeOutExpo"
+            data-easing="Power4.easeOut"
+            data-endspeed="400"
+            data-endeasing="Power1.easeIn"
             style="z-index:20"><img src="images/giverslogo2.png" alt="">
           </div>
 
-        <div class="tp-caption pat tp-resizeme large_bold_darkblue " 
+        <div class="tp-caption tp-resizeme large_bold_darkblue " 
             data-x="132"
             data-y="180"
             data-speed="300"
             data-start="300"
-           data-easing="easeOutExpo"
+            data-easing="Power4.easeOut"
+            data-endspeed="500"
+            data-endeasing="Power4.easeIn"
+      
+            data-captionhidden="on"
             style="z-index:19"> <a href="http://awitbeck.github.io/Givers_Street" target="_blank" onclick="Click();">VIEW SITE</a>
           </div>
 
@@ -102,33 +110,41 @@
         
 
 
-    <div class="tp-caption pat tp-resizeme large_bold_darkblue"
+    <div class="tp-caption tp-resizeme large_bold_darkblue"
             data-x="120"
             data-y="230"
             data-speed="300"
             data-start="300"
-            data-easing="easeOutExpo"
+            data-easing="Power4.easeOut"
+            data-endspeed="500"
+            data-endeasing="Power4.easeIn"
+            data-captionhidden="on"
             style="z-index:18"><a href="https://github.com/awitbeck/Givers_Street/tree/gh-pages" target="_blank" onclick="Click();">VIEW GITHUB</a>
           </div>
 
           
 
-          <div class="tp-caption pat tp-resizeme small_thin_grey"
+          <div class="tp-caption tp-resizeme small_thin_grey"
             data-x="40"
             data-y="80"
             data-speed="300"
             data-start="300"
-             data-easing="easeOutExpo"
+            data-easing="Power4.easeOut"
+            data-endspeed="500"
+            data-endeasing="Power4.easeIn"
+            data-captionhidden="on"
             style="z-index: 17">Giver’s street is a mock-up of a charity<br> site I deisgned and built using the Zurb<br> Foundation 5 framework. This site<br> is fully responsive.
           </div>
 
 
-            <div class="tp-caption pat tp-resizeme"
+            <div class="tp-caption tp-resizeme"
             data-x="380"
             data-y="20"
             data-speed="300"
             data-start="300"
-             data-easing="easeOutExpo"
+            data-easing="Power4.easeOut"
+            data-endspeed="400"
+            data-endeasing="Power1.easeIn"
             style="z-index: 10"><img src="images/giversstreetsite.png" alt="">
           </div>
 
@@ -138,54 +154,67 @@
           <!-- MAIN IMAGE -->
   <img src="images/background.png"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
 
-      <div class="tp-caption pat"
+      <div class="tp-caption"
             data-x="40"
             data-y="20"
             data-speed="300"
             data-start="300"
-            data-easing="easeOutExpo"
+            data-easing="Power4.easeOut"
+            data-endspeed="400"
+            data-endeasing="Power1.easeIn"
             style="z-index:9"><img src="images/jottly_logo.png" alt="">
           </div>
 
 
-        <div class="tp-caption pat large_bold_darkblue"
+        <div class="tp-caption large_bold_darkblue"
             data-x="132"
             data-y="180"
             data-speed="300"
             data-start="300"
-           data-easing="easeOutExpo"
+            data-easing="Power4.easeOut"
+            data-endspeed="500"
+            data-endeasing="Power4.easeIn"
+            data-captionhidden="on"
             style="z-index:7"><a href="http://awitbeck.github.io/Jottly/" target="_blank" onclick="Click();">VIEW SITE</a>
           </div>
 
 
-    <div class="tp-caption pat large_bold_darkblue"
+    <div class="tp-caption large_bold_darkblue"
             data-x="120"
             data-y="230"
             data-speed="300"
             data-start="300"
-            data-easing="easeOutExpo"
+            data-easing="Power4.easeOut"
+            data-endspeed="500"
+            data-endeasing="Power4.easeIn"
+            data-captionhidden="on"
             style="z-index: 6"><a href="https://github.com/awitbeck/Jottly/tree/gh-pages" target="_blank" onclick="Click();">VIEW GITHUB</a>
           </div>
 
 
 
 
-          <div class="tp-caption pat small_thin_grey"
+          <div class="tp-caption small_thin_grey"
             data-x="40"
             data-y="90"
             data-speed="300"
             data-start="300"
-            data-easing="easeOutExpo"
+            data-easing="Power4.easeOut"
+            data-endspeed="500"
+            data-endeasing="Power4.easeIn"
+            data-captionhidden="on"
             style="z-index: 8">Jott.ly is a mock-up of a landing page<br> for a writing web app I deisgned and<br> built using the Skeleton 960 Grid<br> system. This site is fully responsive.
           </div>
 
 
-            <div class="tp-caption pat "
+            <div class="tp-caption "
             data-x="420"
             data-y="20"
             data-speed="300"
             data-start="300"
-            data-easing="easeOutExpo"
+            data-easing="Power4.easeOut"
+            data-endspeed="400"
+            data-endeasing="Power1.easeIn"
             style="z-index: 10"><img src="images/jottly.png" alt="">
           </div>
       
@@ -226,65 +255,81 @@
           <img src="images/background.png"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
           <!-- LAYERS -->
           <!-- LAYER NR. 1 -->
-        <div class="tp-caption pat tp-resizeme"
+        <div class="tp-caption tp-resizeme"
             data-x="100"
             data-y="20"
             data-speed="300"
             data-start="300"
-            data-easing="easeOutExpo"
+            data-easing="Power4.easeOut"
+            data-endspeed="400"
+            data-endeasing="Power1.easeIn"
             style="z-index:20"><img src="images/paycrave_logo.png" alt="">
           </div>
 
-          <div class="tp-caption pat tp-resizeme small_thin_grey"
+          <div class="tp-caption tp-resizeme small_thin_grey"
             data-x="40"
             data-y="160"
             data-speed="300"
             data-start="300"
-            data-easing="easeOutExpo"
+            data-easing="Power4.easeOut"
+            data-endspeed="500"
+            data-endeasing="Power4.easeIn"
+            data-captionhidden="on"
             style="z-index: 17">Paycrave is a mock mobile app that<br> locates nearby food trucks and allows<br> the user to order food from their phone.<br> I designed the app using a logo and<br> style guide provided by bloc.io.
           </div>
 
       
 
-    <div class="tp-caption pat tp-resizeme large_bold_darkblue"
+    <div class="tp-caption tp-resizeme large_bold_darkblue"
             data-x="340"
             data-y="30"
             data-speed="300"
             data-start="300"
-            data-easing="easeOutExpo"
+            data-easing="Power4.easeOut"
+            data-endspeed="500"
+            data-endeasing="Power4.easeIn"
+            data-captionhidden="on"
             style="z-index:18"><img src="images/phones.png" alt="">
           </div>
 
-            <div class="tp-caption pat tp-resizeme large_bold_darkblue"
+            <div class="tp-caption tp-resizeme large_bold_darkblue"
             data-x="370"
             data-y="230"
             data-speed="300"
             data-start="300"
-            data-easing="easeOutExpo"
+            data-easing="Power4.easeOut"
+            data-endspeed="500"
+            data-endeasing="Power4.easeIn"
+            data-captionhidden="on"
             style="z-index:19"><a href="http://invis.io/WT18QCM76"target="_blank" onclick="Click();">VIEW DEMO</a>
 
           </div>
 
-            <div class="tp-caption pat tp-resizeme"
-            data-x="520"
+            <div class="tp-caption tp-resizeme"
+            data-x="500"
             data-y="60"
             data-speed="300"
             data-start="300"
-            data-easing="easeOutExpo"
+            data-easing="Power4.easeOut"
+            data-endspeed="400"
+            data-endeasing="Power1.easeIn"
             style="z-index: 10"><img src="images/ipads.png" alt="">
           </div>
 
-      <div class="tp-caption pat tp-resizeme large_bold_darkblue"
-            data-x="520"
+      <div class="tp-caption tp-resizeme large_bold_darkblue"
+            data-x="505"
             data-y="190"
             data-speed="100"
             data-start="100"
-            data-easing="easeOutExpo"
+            data-easing="Power4.easeOut"
+            data-endspeed="100"
+            data-endeasing="Power4.easeIn"
+            data-captionhidden="on"
             style="z-index:19">
             <ul class="list">
 
 <li>
-<a class="tp-caption pat tp-resizeme" data-lightbox-gallery="gallery2" data-lightbox-type="iframe" href="images/ipad1.png">VIEW PAYCRAVE<br>IPAD SAMPLES</a>
+<a class="tp-caption tp-resizeme" data-lightbox-gallery="gallery2" data-lightbox-type="iframe" href="images/ipad1.png">VIEW PAYCRAVE<br>IPAD SAMPLES</a>
 </li>
 
 <li>
@@ -397,55 +442,72 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     <!-- LAYERS -->
 
     <!-- LAYER NR. 1 -->
-    <div class="tp-caption pat tp-resizeme" 
+    <div class="tp-caption tp-resizeme" 
       data-x="center" 
       data-y="10" data-voffset="-300"
       data-bgfit="cover"
       data-speed="300"
       data-start="300"
-      data-easing="easeOutExpo"
+      data-easing="Power4.easeOut"
+      data-splitin="none"
+      data-splitout="none"
+      data-elementdelay="0.01"
+      data-endelementdelay="0.1"
+      data-endspeed="500"
+      data-endeasing="Power4.easeIn"
       style="z-index:2;"> <img src="images/giverslogo2.png" alt="" >
     </div>
 
-      <div class="tp-caption pat tp-resizeme small_thin_grey"
+      <div class="tp-caption tp-resizeme small_thin_grey"
             data-x="center"
             data-y="80"
             data-speed="300"
             data-start="300"
-            data-easing="easeOutExpo"
+            data-easing="Power4.easeOut"
+            data-endspeed="500"
+            data-endeasing="Power4.easeIn"
+            data-captionhidden="on"
             style="z-index: 17">Giver’s street is a mock-up of a charity<br> site I deisgned and built using the Zurb<br> Foundation 5 framework. This site<br> is fully responsive.
           </div>
 
     <!-- LAYER NR. 2 -->
-      <div class="tp-captions pat tp-resizeme large_bold_darkblue " 
+      <div class="tp-caption tp-resizeme large_bold_darkblue " 
             data-x="center"
             data-y="170"
             data-speed="300"
             data-start="300"
-            data-easing="easeOutExpo"
+            data-easing="Power4.easeOut"
+            data-endspeed="500"
+            data-endeasing="Power4.easeIn"
+            data-captionhidden="on"
             style="z-index:19"> <a href="http://awitbeck.github.io/Givers_Street" target="_blank" onclick="Click();">VIEW SITE</a>
           </div>
 
     <!-- LAYER NR. 3 -->
-<div class="tp-caption pat tp-resizeme large_bold_darkblue"
+<div class="tp-caption tp-resizeme large_bold_darkblue"
             data-x="center"
             data-y="220"
             data-speed="300"
             data-start="300"
-            data-easing="easeOutExpo"
+            data-easing="Power4.easeOut"
+            data-endspeed="500"
+            data-endeasing="Power4.easeIn"
+            data-captionhidden="on"
             style="z-index:18"><a href="https://github.com/awitbeck/Givers_Street/tree/gh-pages" target="_blank" onclick="Click();">VIEW GITHUB</a>
           </div>
 
 
         
 
-            <div class="tp-caption pat tp-resizeme"
+            <div class="tp-caption tp-resizeme"
             data-x="center"
             data-y="270"
             data-bgfit="contain"
             data-speed="300"
             data-start="300"
-            data-easing="easeOutExpo"
+            data-easing="Power4.easeOut"
+            data-endspeed="400"
+            data-endeasing="Power1.easeIn"
             style="z-index:10; height:100%;"><img src="images/giversstreetsite.png" alt="">
           </div>
 
@@ -462,57 +524,74 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     <!-- LAYERS -->
 
     <!-- LAYER NR. 1 -->
-    <div class="tp-caption pat tp-resizeme" 
+    <div class="tp-caption tp-resizeme" 
       data-x="center" 
       data-y="10" data-voffset="-300"
       data-bgfit="cover"
       data-speed="300"
       data-start="300"
-      data-easing="easeOutExpo"
+      data-easing="Power4.easeOut"
+      data-splitin="none"
+      data-splitout="none"
+      data-elementdelay="0.01"
+      data-endelementdelay="0.1"
+      data-endspeed="500"
+      data-endeasing="Power4.easeIn"
       style="z-index:2;"> <img src="images/jottly_logo.png" alt="">
     </div>
 
 
-<div class="tp-caption pat tp-resizeme small_thin_grey"
+<div class="tp-caption tp-resizeme small_thin_grey"
             data-x="center"
             data-y="80"
             data-speed="300"
             data-start="300"
-           data-easing="easeOutExpo"
+            data-easing="Power4.easeOut"
+            data-endspeed="500"
+            data-endeasing="Power4.easeIn"
+            data-captionhidden="on"
             style="z-index:18">Jott.ly is a mock-up of a landing page<br> for a writing web app I deisgned and<br> built using the Skeleton 960 Grid<br> system. This site is fully responsive.
           </div>
           
 
 
-      <div class="tp-caption pat tp-resizeme large_bold_darkblue"
+      <div class="tp-caption tp-resizeme large_bold_darkblue"
             data-x="center"
             data-y="170"
             data-speed="300"
             data-start="300"
-            data-easing="easeOutExpo"
+            data-easing="Power4.easeOut"
+            data-endspeed="500"
+            data-endeasing="Power4.easeIn"
+            data-captionhidden="on"
             style="z-index:7"><a href="http://awitbeck.github.io/Jottly/" target="_blank" onclick="Click();">VIEW SITE</a>
           </div>
 
     <!-- LAYER NR. 2 -->
-      <div class="tp-caption pat tp-resizeme large_bold_darkblue" 
+      <div class="tp-caption tp-resizeme large_bold_darkblue" 
             data-x="center"
             data-y="220"
             data-speed="300"
             data-start="300"
-           data-easing="easeOutExpo"
+            data-easing="Power4.easeOut"
+            data-endspeed="500"
+            data-endeasing="Power4.easeIn"
+            data-captionhidden="on"s
             style="z-index:19"><a href="https://github.com/awitbeck/Jottly/tree/gh-pages" target="_blank" onclick="Click();">VIEW GITHUB</a>
           </div>
          
 
     <!-- LAYER NR. 3 -->
 
-            <div class="tp-caption pat tp-resizeme"
+            <div class="tp-caption tp-resizeme"
             data-x="center"
             data-y="270"
             data-bgfit="contain"
             data-speed="300"
             data-start="300"
-            data-easing="easeOutExpo"
+            data-easing="Power4.easeOut"
+            data-endspeed="400"
+            data-endeasing="Power1.easeIn"
             style="z-index: 10"><img src="images/jottly.png" alt="">
           </div>
 
@@ -542,69 +621,89 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
            <img src="images/background3.png"  alt="fullslide1"  data-bgposition="center top" data-bgfit="contain" data-bgrepeat="no-repeat">
           <!-- LAYERS -->
           <!-- LAYER NR. 1 -->s
-        <div class="tp-caption pat "
+        <div class="tp-caption "
              data-x="center" 
              data-y="top" 
       
              data-speed="300"
              data-start="300"
-             data-easing="easeOutExpo"
+             data-easing="Power4.easeOut"
+             data-splitin="none"
+             data-splitout="none"
+             data-elementdelay="0.01"
+             data-endelementdelay="0.1"
+             data-endspeed="500"
+             data-endeasing="Power4.easeIn"
             style="z-index:20"><img src="images/paycrave_logo.png" alt="">
           </div>
 
-          <div class="tp-caption pat tp-resizeme small_thin_grey"
+          <div class="tp-caption tp-resizeme small_thin_grey"
             data-x="center"
             data-y="140"
             data-speed="100"
             data-start="100"
-           data-easing="easeOutExpo"
+            data-easing="Power4.easeOut"
+            data-endspeed="500"
+            data-endeasing="Power4.easeIn"
+            data-captionhidden="on"
             style="z-index: 17">Paycrave is a mock mobile app that<br> locates nearby food trucks and allows<br> the user to order food from their phone.<br> I designed the app using a logo and<br> style guide provided by bloc.io.
           </div>
 
       
 
-    <div class="tp-caption pat tp-resizeme large_bold_darkblue"
+    <div class="tp-caption tp-resizeme large_bold_darkblue"
             data-x="50"
             data-y="290"
             data-speed="300"
             data-start="300"
-            data-easing="easeOutExpo"
+            data-easing="Power4.easeOut"
+            data-endspeed="500"
+            data-endeasing="Power4.easeIn"
+            data-captionhidden="on"
             style="z-index:18"><img src="images/phones.png" alt="">
           </div>
 
-            <div class="tp-caption pat tp-resizeme large_bold_darkblue"
+            <div class="tp-caption tp-resizeme large_bold_darkblue"
             data-x="80"
             data-y="490"
             data-bgfit="contain"
             data-speed="300"
             data-start="300"
-           data-easing="easeOutExpo"
+            data-easing="Power4.easeOut"
+            data-endspeed="500"
+            data-endeasing="Power4.easeIn"
+            data-captionhidden="on"
             style="z-index:19"><a  class="tp-caption tp-resizeme" href="https://annearchy.proto.io/share/?id=2bded5d3-f76f-4ca2-8773-53441286661a&v=3"target="_blank" onclick="Click();">VIEW DEMO</a>
 
           </div>
 
-            <div class="tp-caption pat tp-resizeme"
+            <div class="tp-caption tp-resizeme"
             data-x="280"
             data-y="330"
            
             data-speed="300"
             data-start="270"
-            data-easing="easeOutExpo"
+            data-easing="Power4.easeOut"
+            data-endspeed="400"
+            data-endeasing="Power1.easeIn"
             style="z-index: 10"><img src="images/ipads.png" alt="">
           </div>
 
-      <div class="tp-caption pat large_bold_darkblue"
+      <div class="tp-caption large_bold_darkblue"
             data-x="280"
             data-y="450"
             data-bgfit="contain"
             data-speed="100"
             data-start="100"
-            data-easing="easeOutExpo"
+            data-easing="Power4.easeOut"
+            data-endspeed="100"
+            data-endeasing="Power4.easeIn"
+            data-captionhidden="on"
             style="z-index:19">
             <ul class="list">
 
 <li>
-<a class="tp-caption pat tp-resizeme" data-lightbox-gallery="gallery2" data-lightbox-type="iframe" href="images/ipad1.png">VIEW PAYCRAVE<br>IPAD SAMPLES</a>
+<a class="tp-caption tp-resizeme" data-lightbox-gallery="gallery2" data-lightbox-type="iframe" href="images/ipad1.png">VIEW PAYCRAVE<br>IPAD SAMPLES</a>
 </li>
 
 <li>
@@ -695,7 +794,7 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
              jQuery('#slider1').revolution(
             {
               delay:99999999,
-              startwidth:700,
+              startwidth:645,
               startheight:320,
               hideThumbs:0,
                hideTimerBar:"on",
@@ -708,7 +807,7 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
      jQuery('#slider2').revolution(
             {
               delay:99999999,
-              startwidth:700,
+              startwidth:645,
               startheight:320,
               hideThumbs:0,
                hideTimerBar:"on",
