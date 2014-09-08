@@ -160,8 +160,8 @@ $header-font-color: #6f812f;
 // $small-font-color: scale-color($header-font-color, $lightness: 35%);
 
 // We use these to style paragraphs
- $paragraph-font-family: "Franklin Gothic Medium";
-// $paragraph-font-weight: $font-weight-normal;
+ $paragraph-font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif, "Open Sans";
+ $paragraph-font-weight: 300;
  $paragraph-font-size:  1rem;
  $paragraph-line-height: 1.1;
 // $paragraph-margin-bottom: rem-calc(20);
@@ -183,7 +183,7 @@ $header-font-color: #6f812f;
 // We use these to style anchors
 // $anchor-text-decoration: none;
 // $anchor-text-decoration-hover: none;
-// $anchor-font-color: #dd0c20;
+ $anchor-font-color: #dd0c20;
  $anchor-font-color-hover: scale-color(#dd0c20, $lightness: -14%);
 
 // We use these to style the <hr> element

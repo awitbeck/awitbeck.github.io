@@ -1,12 +1,6 @@
 @import "settings";
 
 
-.pat {
-  -webkit-transform: none !important;
-}
-
-
-
 @font-face {
     font-family:'bebas_neueregular';
     src: url('BebasNeue-webfont.eot');
@@ -19,6 +13,9 @@
 
 }
 
+p{
+  font-family: "Franklin Gothic Medium";
+}
 
 
 
@@ -48,11 +45,15 @@ li a{
 #slider1{
   display: block;
   position: relative;
- 
-
 }
 
 }
+
+
+
+
+
+
 
 
 div#mobiledesign{
@@ -102,7 +103,6 @@ h1{
 
 
 p{
-  
   margin-right: -20px;
  
 }

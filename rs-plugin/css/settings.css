@@ -733,6 +733,7 @@ font-family:'bebas_neueregular',"Open Sans";
 color:#dd0c20;
 text-decoration:underline;
 text-align: center;
+  letter-spacing: 1px;
 }
 
 
@@ -1932,7 +1933,7 @@ border-style:none;
 .tp-leftarrow.preview4 .tp-arr-allwrapper	{	left:0px}
 .tparrows.preview4 .tp-arr-iwrapper			{	position: relative}
 
-.tparrows.preview4 .tp-arr-imgholder 		{	display:block;background-size:cover; background-position:center center;width:180px;height:110px;
+.tparrows.preview4 .tp-arr-imgholder 		{	display:none;background-size:cover; background-position:center center;width:0px;height:0px;
 												position:relative;top:0px;
 
 												-webkit-backface-visibility: hidden;

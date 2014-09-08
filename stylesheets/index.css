@@ -1,8 +1,3 @@
-/* line 4, ../scss/index.scss */
-.pat {
-  -webkit-transform: none !important;
-}
-
 @font-face {
   font-family: 'bebas_neueregular';
   src: url("BebasNeue-webfont.eot");
@@ -11,40 +6,45 @@
   font-style: normal;
 }
 
-/* line 26, ../scss/index.scss */
+/* line 16, ../scss/index.scss */
+p {
+  font-family: "Franklin Gothic Medium";
+}
+
+/* line 23, ../scss/index.scss */
 div#logo {
   padding-left: 15px;
   padding-top: 10px;
   padding-bottom: 100px;
 }
 
-/* line 33, ../scss/index.scss */
+/* line 30, ../scss/index.scss */
 div#webdesign {
   padding-bottom: 100px;
 }
-/* line 36, ../scss/index.scss */
+/* line 33, ../scss/index.scss */
 div#webdesign h1 {
   display: block;
   position: relative;
   top: 50%;
   margin-top: 10%;
 }
-/* line 44, ../scss/index.scss */
+/* line 41, ../scss/index.scss */
 div#webdesign li a {
   font-color: #dd0c20 !important;
 }
-/* line 48, ../scss/index.scss */
+/* line 45, ../scss/index.scss */
 div#webdesign #slider1 {
   display: block;
   position: relative;
 }
 
-/* line 58, ../scss/index.scss */
+/* line 59, ../scss/index.scss */
 div#mobiledesign {
   padding-top: 10px;
   padding-bottom: 100px;
 }
-/* line 63, ../scss/index.scss */
+/* line 64, ../scss/index.scss */
 div#mobiledesign h1 {
   color: #e08415;
   display: block;
@@ -52,22 +52,22 @@ div#mobiledesign h1 {
   top: 50%;
   margin-top: 10%;
 }
-/* line 74, ../scss/index.scss */
+/* line 75, ../scss/index.scss */
 div#mobiledesign #slider2 {
   display: block;
   position: relative;
 }
 
-/* line 83, ../scss/index.scss */
+/* line 84, ../scss/index.scss */
 div#mobiledesign_small {
   padding-top: 50px;
 }
-/* line 86, ../scss/index.scss */
+/* line 87, ../scss/index.scss */
 div#mobiledesign_small h1 {
   color: #e08415;
 }
 
-/* line 95, ../scss/index.scss */
+/* line 96, ../scss/index.scss */
 div#flashanimation h1 {
   color: #e85462;
   display: block;
@@ -75,7 +75,7 @@ div#flashanimation h1 {
   top: 50%;
   margin-top: 10%;
 }
-/* line 104, ../scss/index.scss */
+/* line 105, ../scss/index.scss */
 div#flashanimation p {
   margin-right: -20px;
 }
